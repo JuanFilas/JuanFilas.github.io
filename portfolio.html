@@ -228,18 +228,6 @@
             transform: translateY(-1px);
         }
 
-        /* Imagen decorativa del slide */
-        .slide-deco {
-            position: absolute;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            width: 40%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0.4;
-        }
 
         .slide-deco-text {
             font-family: 'Playfair Display', serif;
@@ -401,6 +389,16 @@
         }
 
         /* ─── PROYECTOS ─── */
+
+.project-thumb-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    position: absolute;  /* ← clave */
+    inset: 0;
+    z-index: 0;          /* ← capa de atrás */
+}
         #proyectos {
             border-top: 1px solid var(--dark-border);
         }
@@ -713,21 +711,21 @@
                             <!--
 
                             -->
-                            <div class="project-thumb-num">01</div>
-                            <div class="project-thumb-label">
-                                <span class="project-type-badge">Tipo de proyecto</span>
-                            </div>
+                      <div class="project-thumb">
+    <img src="C:\Users\Alumno\Desktop\Portafolio\imagenes\auto.png" alt="Auto lowpoly" class="project-thumb-img">
+    <div class="project-thumb-label">
+        <span class="project-type-badge">Modelo 3D</span>
+    </div>
+</div>
                         </div>
                         <div class="project-body">
-                            <div class="project-title">Nombre del Proyecto 1</div>
+                            <div class="project-title">Auto low poly</div>
                             <p class="project-desc">
-                                Descripcion
+                                Aca modele un auto en blender usando un estilo low poly
                             </p>
                             <div class="project-stack">
-                                <span class="stack-tag">HTML</span>
-                                <span class="stack-tag">CSS</span>
-                                <span class="stack-tag">JavaScript</span>
-                                <span class="stack-tag">Bootstrap</span>
+                                <span class="stack-tag">Blender</span>
+                                <span class="stack-tag">Lowpoly</span>
                             </div>
                             <div class="project-links">
                                 </a>
@@ -746,21 +744,21 @@
                             <!--
 
                             -->
-                            <div class="project-thumb-num">02</div>
-                            <div class="project-thumb-label">
-                                <span class="project-type-badge">Tipo de proyecto</span>
-                            </div>
+                      <div class="project-thumb">
+    <img src="C:\Users\Alumno\Desktop\Portafolio\imagenes\Codigo.png" alt="Auto lowpoly" class="project-thumb-img">
+    <div class="project-thumb-label">
+        <span class="project-type-badge">Programacion</span>
+    </div>
+</div>
                         </div>
                         <div class="project-body">
-                            <div class="project-title">Nombre del Proyecto 2</div>
+                            <div class="project-title">Juego de pelea basado en texto</div>
                             <p class="project-desc">
-                                Descripcion
+                                Se trata de un juego de peleas basado en texto con personajes, estadisticas y factor de aleatoridad, nunca complete todo lo que queria pero si fue de mis primeros proyectos de programacion orientada a objetos
                             </p>
                             <div class="project-stack">
-                                <span class="stack-tag">HTML</span>
-                                <span class="stack-tag">CSS</span>
-                                <span class="stack-tag">JavaScript</span>
-                                <span class="stack-tag">Bootstrap</span>
+                                <span class="stack-tag">Python</span>
+                                <span class="stack-tag">Programacion orientada a objetos</span>
                             </div>
                             <div class="project-links">
                                 </a>
